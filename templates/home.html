@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Murycs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+       ul{
+        float: right;
+        margin-top: 20px;
+       }
+       li{
+        float: left;
+        width: auto;
+        margin-right: 30px;
+       }
+
+       li:last-child{
+        margin-right: 0px;
+       }
+
+       ul li a{
+        text-decoration: none !important;
+       }
+
+       footer{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+       }
+
+       .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .background{
+    background: url("{% static 'images/bubbles.svg'%}") center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));;
+    width: 100%;
+    background-size: cover;
+    background-position: center -138px;
+    height: 100vh;
+  }
+
+  .hero{
+    background: #000 !important;
+  }
+
+  .footer{
+    background-color: #000 !important;
+    color: #fff !important
+  }
+
+  .footer p{margin-left: 30px}
+
+  .background img{
+    width: 250px;
+    height: 370px;
+  }
+
+  .background .img-sec{
+    position: absolute;
+    right: 0px;
+    left: 20%;
+    height: 575px;
+    top: 15%;
+    z-index: 1;
+  }
+
+  .background p{
+    padding: 20%;
+    margin-left: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    width: 85%;
+    line-height: 50px;
+  }
+
+  .hero-body{
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+    </style>
+</head>
+<body>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title">
+                        <i class="fa fa-music" aria-hidden="true"></i>&nbsp; Murycs
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                   <ul>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Sign up</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <div class="row">
+            <div class="col-md-12">
+                <div class="background">
+                    <div class="img-sec">
+                        {% load static %}
+                        <img src="{% static 'images/phone.jpg'%}" alt="">
+                    </div>  
+                    <p>Find Lyrics of your favourite artist's hits</p>
+                </div>
+        </div>
+    </div>
+<footer class="footer">
+    <p>Developed by - Preethana C, Suhrith NPK Sistla, Sushanthika <br></p>
+</footer>
+</body>
+</html>
