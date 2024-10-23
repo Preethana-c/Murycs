@@ -59,5 +59,3 @@ The Genius - Song Lyrics API is used to search for songs, artists, and lyrics, a
 | `HttpResponse`            | Handles the response and status code received for HTTP requests.                                                                                 |
 | `json`                    | Converts JSON data into a Python object, using `json.loads()` to parse the JSON object retrieved from the HTTP response into a Python dictionary. |
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
